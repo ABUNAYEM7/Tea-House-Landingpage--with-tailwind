@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0516d8b0ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="max-w-screen-2xl mx-auto">
+    <!-- header starts here -->
+    <header class="max-w-screen-xl mx-auto my-4">
+      <!-- header--container -->
+      <div class="sm:flex md:flex-row items-center justify-between p-4 md:p-12">
+        <!-- header-left-container -->
+        <div class="md:p-4 p-2 md:space-y-4 space-y-2">
+          <h1 class="text-7xl font-extrabold">
+            It's good <br />
+            tea time at The <br />
+            Tea House
+          </h1>
+          <p class="text-gray-600 text-lg font-semibold md:w-3/4">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <button
+            class="md:px-5 md:py-4 px-4 py-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl text-white text-xl font-bold"
+            type="button"
+          >
+            Explore More <i class="fa-solid fa-arrow-right tex-lg  -rotate-45"></i>
+          </button>
+        </div>
+        <!-- header-right-container -->
+        <div class="md:p-4 p-2 relative">
+          <div>
+            <img src="./images/banner.png" alt="" />
+          </div>
+          <div
+            class="absolute lg:bottom-1 lg:right-64 md:right-36 md:-bottom-5 right-36 bottom-1 bg-white flex items-center justify-center gap-2 rounded-lg shadow-md md:p-5 p-2"
+          >
+            <i class="fa-solid fa-star text-2xl text-amber-400"></i>
+            <div>
+              <h3 class="text-3xl font-extrabold">5.00</h3>
+              <p class="font-semibold text-gray-600">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-screen-lg mx-auto ">
+
+      <!-- featured section starts here -->
+      <section class="my-4 p-4 text-center ">
+        <h3 class="text-5xl font-extrabold mb-4">Our Featured Products</h3>
+        <p class="text-lg text-gray-600 md:w-4/5 mx-auto mb-4">
+          Explore our top selections: innovative designs, high-quality materials, and unbeatable performance. Elevate your experience with our premier products.</p>
+          <!-- featured card container -->
+          <div class="grid justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+            <!-- featured-card-1 -->
+            <div class="flex flex-col items-center justify-center bg-gradient-to-b from-gray-400 to-white shadow-lg rounded-lg space-y-2 sm:w-4/6 md:w-5/6  lg:w-full">
+              <div class="py-2">
+                <img  src="./images/tea-1.png" alt="tea-image">
+              </div>
+              <div class="p-4">
+                <h3 class="text-2xl font-extrabold">Milk Tea</h3>
+                <p class=" font-semibold text-gray-600 mt-2 w-4/6 md:w-full mx-auto">
+                  Creamer could be replaced by fresh milk</p>
+              </div>
+            </div>
+            <!-- featured-card-2 -->
+            <div class="flex flex-col items-center justify-center bg-gradient-to-b from-gray-400 to-white shadow-lg rounded-lg space-y-2 sm:w-4/6 md:w-5/6  lg:w-full">
+              <div class="py-2">
+                <img  src="./images/tea-2.png" alt="tea-image">
+              </div>
+              <div class="p-4">
+                <h3 class="text-2xl font-extrabold">Black Tea</h3>
+                <p class=" font-semibold text-gray-600 mt-2 w-4/6 md:w-full mx-auto">
+                  Bold, robust, aromatic, energizing, classic.</p>
+              </div>
+            </div>
+            <!-- featured-card-3 -->
+            <div class="flex flex-col items-center justify-center bg-gradient-to-b from-gray-400 to-white shadow-lg rounded-lg space-y-2 sm:w-4/6 md:w-5/6 lg:w-full">
+              <div class="py-2">
+                <img  src="./images/tea-3.png" alt="tea-image">
+              </div>
+              <div class="p-4">
+                <h3 class="text-2xl font-extrabold">Lemon Tea</h3>
+                <p class=" font-semibold text-gray-600 mt-2 w-4/6 md:w-full mx-auto"> Citrus, yummy,zesty, tangy, fresh, crisp.</p>
+              </div>
+            </div>
+            <!-- featured-card-4 -->
+            <div class="flex flex-col items-center justify-center bg-gradient-to-b from-gray-400 to-white shadow-lg rounded-lg space-y-2 sm:w-4/6 md:w-5/6 lg:w-full">
+              <div class="py-2">
+                <img  src="./images/tea-4.png" alt="tea-image">
+              </div>
+              <div class="p-4">
+                <h3 class="text-2xl font-extrabold">Green Tea</h3>
+                <p class=" font-semibold text-gray-600 mt-2 w-4/6 md:w-full mx-auto">
+                  Light, delicate, soothing, fresh, subtle.</p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- great tea section starts here -->
+      <section class=" flex flex-col md:flex-row justify-between gap-4 my-4 mx-auto p-8">
+        <!-- great tea left container -->
+        <div class=" grid grid-cols-2 grid-rows-3 gap-4 w-full md:w-2/5 ">
+          <div class="h-38  bg-gradient-to-r from-red-100 to-red-50 rounded-lg hover:scale-110 "></div>
+          <div class="bg-red-100 rounded-lg row-span-2 hover:scale-105">
+            <img class="py-6 mx-auto " src="./images/fresh-1.png" alt="">
+          </div>
+          <div class="bg-stone-200 rounded-lg row-span-2 hover:scale-105">
+            <img class="py-6 mx-auto " src="./images/fresh-2.png" alt="">
+          </div>
+          <div class="h-38  bg-stone-200 rounded-lg hover:scale-110"></div>
+        </div>
+        <!-- great tea right container -->
+        <div class="flex flex-col p-2 w-full md:w-1/2 space-y-4">
+          <h2 class="text-5xl font-extrabold mb-4">Great Tea, Freshly Presented</h2>
+          <p class="font-semibold text-gray-600 mb-4">
+            The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan..</p>
+            <h3 class="text-xl font-extrabold">Unique Taste</h3>
+            <p class="font-semibold text-gray-600 mb-4">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+            <h3 class="text-xl font-extrabold">Premium Quality</h3>
+            <p class="font-semibold text-gray-600 ">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+        </div>
+      </section>
+
+      <!-- client section starts here -->
+      <section class=" bg-gradient-to-r from-orange-500 to-red-500 rounded-lg
+        p-4 flex flex-col md:flex-row gap-10">
+        <!-- client left container -->
+        <div class="text-white flex flex-col justify-center gap-6 items-start 
+        md:w-1/2 w-full ">
+          <h3 class="text-5xl font-extrabold">Meet Our Super Clients</h3>
+          <p class="font-medium">Meet Our Super Clients highlights exceptional clients who excel in their fields, showcasing their unique successes and inspiring achievements.</p>
+          <button class="bg-white py-3 px-6 text-red-500 font-bold rounded-lg" type="button">Show All</button>
+        </div>
+        <!-- client right container -->
+        <!-- main-card -->
+        <div class=" relative md:w-1/2 w-w-3/4 py-2 ">
+          <div class="absolute lg:top-40 lg:-left-20 md:top-40 md:-left-20 -left-5 top-40 z-10">
+            <div class="relative left-8 md:left-24 h-56 w-3/4 md:w-3/4 rounded-lg bg-white flex flex-col justify-center mb-8 ">
+              <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                <img class="p-2" src="./images/client.png" alt="client-icon">
+              </div>
+              <div class="space-y-2 p-5">
+                <p class="text-gray-600 font-medium mt-12">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <h3 class="text-lg font-bold">Ilham Yuda</h3>
+                <small>Businessman</small>
+              </div>
+            </div>
+          </div>
+          <!-- card-1 -->
+          <div class="relative left-24 md:left-20 h-56 w-3/4 md:w-3/4 rounded-lg bg-white flex flex-col justify-center mb-8 opacity-50">
+            <div class="absolute -top-5 -left-5 bg-white rounded-full">
+              <img class="p-2" src="./images/client.png" alt="client-icon">
+            </div>
+            <div class="space-y-2 p-5">
+              <p class="text-gray-600 font-medium mt-12">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+              <h3 class="text-lg font-bold">Ilham Yuda</h3>
+              <small>Businessman</small>
+            </div>
+          </div>
+            <!-- card-2 -->
+            <div class="relative left-24 md:left-20 h-56 w-3/4 md:w-3/4 rounded-lg bg-white flex flex-col justify-center opacity-50">
+              <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                <img class="p-2" src="./images/client.png" alt="client-icon">
+              </div>
+              <div class="space-y-2 p-5">
+                <p class="text-gray-600 font-medium mt-12">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <h3 class="text-lg font-bold">Ilham Yuda</h3>
+                <small>Businessman</small>
+              </div>
+            </div>
+            
+        </div>
+        </div>
+      </section>
+      <!-- news section starts here -->
+
+      <section class="my-6 p-4">
+        <h3 class="text-5xl font-extrabold text-center">News & Events</h3>
+        <p class="mt-5 mb-5 font-medium text-gray-600 w-3/4 mx-auto text-center">News & Events covers current affairs, breaking news, local and global updates, and major happenings shaping our world today.</p>
+        <!-- news-card-container -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 justify-items-center">
+          <!-- news-card-1 -->
+          <div class="max-w-80  flex flex-col gap-4 px-3 py-2 rounded-lg border-2 border-steal-400 shadow-lg">
+            <div class="w-full h-3/5">
+              <img class="p-4 w-full h-full" src="./images/news-1.png" alt="photos">
+            </div>
+            <div class="px-4 space-y-2">
+              <small>Feb 05, 2027</small>
+              <h3 class="text-lg font-extrabold">Collecting 8 points for <br> discount</h3>
+              <p class="text-gray-600 font-medium">Collect 8 points to earn a discount, redeemable on future purchases or services. Save more!</p>
+              <div class="mt-3">
+                <a class="mt-3 text-lg font-semibold" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- news-card-2 -->
+          <div class="max-w-80  flex flex-col gap-4 px-3 py-2 rounded-lg border-2 border-steal-400 shadow-lg">
+            <div class="w-full h-3/5">
+              <img class="p-4 w-full h-full" src="./images/news-2.png" alt="photos">
+            </div>
+            <div class="px-4 space-y-2">
+              <small>Feb 05, 2027</small>
+              <h3 class="text-lg font-extrabold">Collecting 8 points for <br> discount</h3>
+              <p class="text-gray-600 font-medium">Collect 8 points to earn a discount, redeemable on future purchases or services. Save more!</p>
+              <div class="mt-3">
+                <a class="mt-3 text-lg font-semibold" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- news-card-3-->
+          <div class="max-w-80  flex flex-col gap-4 px-3 py-2 rounded-lg border-2 border-steal-400 shadow-lg">
+            <div class="w-full h-3/5">
+              <img class="p-4 w-full h-full" src="./images/news-3.png" alt="photos">
+            </div>
+            <div class="px-4 space-y-2">
+              <small>Feb 05, 2027</small>
+              <h3 class="text-lg font-extrabold">Collecting 8 points for <br> discount</h3>
+              <p class="text-gray-600 font-medium">Collect 8 points to earn a discount, redeemable on future purchases or services. Save more!</p>
+              <div class="mt-3">
+                <a class="mt-3 text-lg font-semibold" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="w-full px-8 py-12 bg-gradient-to-r from-red-100 to-red-50">
+    <div class="max-w-screen-lg mx-auto ">
+      <!-- get started container -->
+      <div class="flex items-center justify-between">
+        <div>
+          <img src="./images/cup.png" alt="cup-image">
+        </div>
+        <div class="flex flex-col  items-center justify-center gap-10 md:flex-row">
+          <p class="text-lg text-gray-600">Ready to get started?</p>
+          <button
+            class="md:px-5 md:py-4 px-4 py-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl text-white text-xl font-bold"
+            type="button"
+          >
+            Explore More 
+          </button>
+        </div>
+      </div>
+      <!-- footer-grid-container -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 py-6 px-4 gap-2 justify-items-center">
+        <!-- quick-links-container -->
+          <div>
+          <h3 class="text-xl font-semibold">Quick Links</h3>
+          <ul class="text-gray-600 space-y-3 mt-4">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Insurance</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          </div>
+          <!-- about-section -->
+          <div>
+            <h3 class="text-xl font-semibold">Quick Links</h3>
+            <ul class="text-gray-600 space-y-3 mt-4">
+              <li><a href="#">Life Insurance</a></li>
+              <li><a href="#">Car Insurance</a></li>
+              <li><a href="#">Health Insurance</a></li>
+              <li><a href="#">House Insurance</a></li>
+            </ul>
+            </div>
+          <!-- contact-section -->
+          <div>
+          <h3 class="text-xl font-semibold">Contact Us</h3>
+          <ul class="text-gray-600 space-y-3 mt-4">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          </div>
+          <!-- input-container -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-bold">Subscribe to our <br> newsletter</h3>
+            <div class="flex items-center justify-center">
+              <input class=" p-3 text-lg text-gray-600 bg-transparent outline-1 outline-amber-500" type="text"   placeholder="Email address">
+              <i class="fa-solid fa-angle-down text-lg bg-gradient-to-r from-[#FF0000] to-[#FF8938] -rotate-90 rounded-full p-1 px-2 cursor-pointer"></i>
+            </div>
+            <div class="text-lg text-red-400 space-x-5">
+              <i class="cursor-pointer fa-brands fa-square-facebook"></i>
+              <i class="cursor-pointer fa-brands fa-square-twitter"></i>
+              <i class="cursor-pointer fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+      </div>
+    </div>
+    </footer>
+  </body>
+</html>
